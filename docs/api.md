@@ -780,7 +780,7 @@ Default is `false`. Control the initial value of [`isValid`] prop prior to
 mount. You can also pass a function. Useful for situations when you want to
 enable/disable a submit and reset buttons on initial mount.
 
-#### `mapPropsToValues?: (props: Props) => Values`
+#### `mapPropsToValues ?: (props: Props) => Values`
 
 If this option is specified, then Formik will transfer its results into
 updatable form state and make these values available to the new component as
