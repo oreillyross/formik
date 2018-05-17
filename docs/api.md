@@ -264,18 +264,18 @@ don’t use both in the same `<Formik>`.
 </Formik>
 ```
 
-### `enableReinitialize?: boolean`
+### `enableReinitialize: boolean`
 
 Default is `false`. Control whether Formik should reset the form if
 [`initialValues`] changes (using deep equality).
 
-### `isInitialValid?: boolean`
+### `isInitialValid: boolean`
 
 Default is `false`. Control the initial value of [`isValid`] prop prior to
 mount. You can also pass a function. Useful for situations when you want to
 enable/disable a submit and reset buttons on initial mount.
 
-### `initialValues?: Values`
+### `initialValues: Values`
 
 Initial field values of the form, Formik will make these values available to
 render methods component as [`props.values`][`values`].
@@ -303,7 +303,7 @@ passed to the the wrapped component.
 Note: [`errors`], [`touched`], [`status`] and all event handlers are NOT
 included in the `FormikBag`.
 
-### `validate?: (values: Values) => FormikErrors<Values> | Promise<any>`
+### `validate: (values: Values) => FormikErrors<Values> | Promise<any>`
 
 _Note: I suggest using [`validationSchema`] and Yup for validation. However,
 `validate` is a dependency-free, straightforward way to validate your forms._
@@ -349,19 +349,19 @@ const validate = (values, props) => {
 }
 ```
 
-### `validateOnBlur?: boolean`
+### `validateOnBlur: boolean`
 
 Default is `true`. Use this option to run validations on `blur` events. More
 specifically, when either [`handleBlur`], [`setFieldTouched`], or [`setTouched`]
 are called.
 
-### `validateOnChange?: boolean`
+### `validateOnChange: boolean`
 
 Default is `true`. Use this option to tell Formik to run validations on `change`
 events and `change`-related methods. More specifically, when either
 [`handleChange`], [`setFieldValue`], or [`setValues`] are called.
 
-### `validationSchema?: Schema | (() => Schema)`
+### `validationSchema: Schema | (() => Schema)`
 
 [A Yup schema](https://github.com/jquense/yup) or a function that returns a Yup
 schema. This is used for validation. Errors are mapped by key to the inner
@@ -427,7 +427,7 @@ const CustomInputComponent: React.SFC<
 );
 ```
 
-### `validate?: (value: any) => undefined | string | Promise<any>`
+### `validate: (value: any) => undefined | string | Promise<any>`
 
 You can run independent field-level validations by passing a function to the
 `validate>` prop. The function will respect the [`validateOnBlur`] and
@@ -537,7 +537,7 @@ export const FriendList = () => (
 
 The name or path to the relevant key in [`values`].
 
-#### `validateOnChange?: boolean`
+#### `validateOnChange: boolean`
 
 Default is `true`. Determines if form validation should or should not be run _after_ any array manipulations.
 
