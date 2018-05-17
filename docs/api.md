@@ -110,7 +110,7 @@ Returns `true` if the there are no [`errors`], or the result of
 #### `resetForm: (nextValues?: Values) => void`
 
 Imperatively reset the form. This will clear [`errors`] and [`touched`], set
-[`isSubmitting`] to `false` and rerun `mapPropsToValues` with the current
+[`isSubmitting`] to `false` and rerun [`mapPropsToValues`] with the current
 `WrappedComponent`'s `props` or what's passed as an argument. The latter is
 useful for calling `resetForm` within `componentWillReceiveProps`.
 
